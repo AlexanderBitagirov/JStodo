@@ -5,14 +5,30 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>web1</title>
     <script src='main.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-     </ul>
-     <input type="text" id="form">
-     <button id="add">Добавить</button>
-     <div id="out"></div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">ToDo</a>
+
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Settings</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="form"> <input type="text" class="form-control" id="form"> </div>
+    <div class="button"> <button type="button" class="btn btn-primary" id="add">Primary</button> </div>
+
+     <div id="out"></div> 
+     
 </body>
 </html>
