@@ -8,5 +8,14 @@ window.onload = function (){
         let i = todoList.length;
         todoList[i]= temp;
         console.log (todoList);
+        out();
+    }
+
+    function out () {
+        let out = '';
+        for ( var key in todoList ) {
+            out += todoList[key].todo + '</br>';
+            document.getElementById('out').innerHTML = out;
+        }
     }
 }
