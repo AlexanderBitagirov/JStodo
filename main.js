@@ -1,4 +1,4 @@
-window.onload = function (){
+window.onload = function () {
     let todoList = [];
     document.getElementById('add').onclick = function () {
         let  addcase = document.getElementById('form').value;
@@ -13,9 +13,25 @@ window.onload = function (){
 
     function out () {
         let out = '';
-        for ( var key in todoList ) {
+        for ( let key in todoList ) {
+
+            if (todoList[key].check === true ) {
+                out += '<input type="checkbox" chacked>';
+            }
+
+            else {
+                out += '<input type="checkbox">';
+
+            }
+
             out += todoList[key].todo + '</br>';
-            document.getElementById('out').innerHTML = out;
+
+ 
+            }
+        
+
+        document.getElementById('out').innerHTML = out;
+
         }
     }
-}
+
